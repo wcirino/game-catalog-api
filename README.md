@@ -80,3 +80,31 @@ docker build -t game-catalog-api .
 docker run -p 8085:8085 game-catalog-api
 
 mvn test
+
+## Estrutura api
+
+game-catalog-api
+├── pom.xml
+├── Dockerfile
+├── .gitignore
+├── src
+│ ├── main
+│ │ ├── java/com/games/api
+│ │ │ ├── controller # Controllers REST (endpoints)
+│ │ │ ├── dto # Objetos de transferência (DTOs)
+│ │ │ ├── entity # Entidades JPA
+│ │ │ ├── enums # Enumerações
+│ │ │ ├── repository # Repositórios + Specifications
+│ │ │ ├── service # Interfaces e implementações de serviços
+│ │ │ └── GameCatalogApiApplication.java
+│ │ └── resources
+│ │ ├── application.yml
+│ │ ├── application-dev.yml
+│ │ ├── application-hml.yml
+│ │ ├── application-docker.yml
+│ │ └── scripts
+│ │ ├── schema.sql
+│ │ └── data.sql
+│ └── test/java/com/games/api
+│ ├── controller # Testes dos controllers
+│ └── service # Testes dos services
