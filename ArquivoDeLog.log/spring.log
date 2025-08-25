@@ -32,3 +32,33 @@
 2025-08-25T13:44:03.956-03:00  INFO 24520 --- [game-catalog-api-dev] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/'
 2025-08-25T13:44:03.963-03:00  INFO 24520 --- [game-catalog-api-dev] [restartedMain] c.games.api.GameCatalogApiApplication    : Started GameCatalogApiApplication in 0.954 seconds (process running for 3719.861)
 2025-08-25T13:44:03.967-03:00  INFO 24520 --- [game-catalog-api-dev] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-25T13:59:20.015-03:00  INFO 18452 --- [game-catalog-api-dev] [restartedMain] c.games.api.GameCatalogApiApplication    : Starting GameCatalogApiApplication using Java 17.0.9 with PID 18452 (C:\aws\project\rest-games\game-catalog-api\game-catalog-api\target\classes started by Willyan Cirino in C:\aws\project\rest-games\game-catalog-api\game-catalog-api)
+2025-08-25T13:59:20.017-03:00  INFO 18452 --- [game-catalog-api-dev] [restartedMain] c.games.api.GameCatalogApiApplication    : The following 1 profile is active: "dev"
+2025-08-25T13:59:20.065-03:00  INFO 18452 --- [game-catalog-api-dev] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-25T13:59:20.065-03:00  INFO 18452 --- [game-catalog-api-dev] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-25T13:59:20.821-03:00  INFO 18452 --- [game-catalog-api-dev] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-25T13:59:20.851-03:00  INFO 18452 --- [game-catalog-api-dev] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 0 JPA repository interfaces.
+2025-08-25T13:59:21.393-03:00  INFO 18452 --- [game-catalog-api-dev] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2025-08-25T13:59:21.409-03:00  INFO 18452 --- [game-catalog-api-dev] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-25T13:59:21.409-03:00  INFO 18452 --- [game-catalog-api-dev] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-08-25T13:59:21.469-03:00  INFO 18452 --- [game-catalog-api-dev] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-25T13:59:21.470-03:00  INFO 18452 --- [game-catalog-api-dev] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1404 ms
+2025-08-25T13:59:22.161-03:00  INFO 18452 --- [game-catalog-api-dev] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-25T13:59:22.203-03:00  INFO 18452 --- [game-catalog-api-dev] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-25T13:59:22.514-03:00  INFO 18452 --- [game-catalog-api-dev] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7968e601
+2025-08-25T13:59:22.518-03:00  INFO 18452 --- [game-catalog-api-dev] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-25T13:59:24.420-03:00  INFO 18452 --- [game-catalog-api-dev] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-25T13:59:24.479-03:00  WARN 18452 --- [game-catalog-api-dev] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-25T13:59:24.571-03:00 DEBUG 18452 --- [game-catalog-api-dev] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
+2025-08-25T13:59:24.657-03:00 DEBUG 18452 --- [game-catalog-api-dev] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-08-25T13:59:24.689-03:00 DEBUG 18452 --- [game-catalog-api-dev] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-08-25T13:59:24.739-03:00 DEBUG 18452 --- [game-catalog-api-dev] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-08-25T13:59:24.875-03:00  INFO 18452 --- [game-catalog-api-dev] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-25T13:59:24.914-03:00  INFO 18452 --- [game-catalog-api-dev] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/'
+2025-08-25T13:59:24.924-03:00  INFO 18452 --- [game-catalog-api-dev] [restartedMain] c.games.api.GameCatalogApiApplication    : Started GameCatalogApiApplication in 5.548 seconds (process running for 6.497)
+2025-08-25T13:59:35.795-03:00  INFO 18452 --- [game-catalog-api-dev] [RMI TCP Connection(6)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-08-25T13:59:35.798-03:00  INFO 18452 --- [game-catalog-api-dev] [RMI TCP Connection(6)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-25T13:59:36.424-03:00  INFO 18452 --- [game-catalog-api-dev] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-25T13:59:36.430-03:00  INFO 18452 --- [game-catalog-api-dev] [RMI TCP Connection(6)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-25T13:59:36.433-03:00  INFO 18452 --- [game-catalog-api-dev] [RMI TCP Connection(6)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-25T13:59:36.458-03:00  INFO 18452 --- [game-catalog-api-dev] [RMI TCP Connection(6)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
