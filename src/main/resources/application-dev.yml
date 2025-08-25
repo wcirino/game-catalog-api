@@ -1,0 +1,40 @@
+spring:
+  application:
+    name: game-catalog-api-dev 
+  banner:
+    location: classpath:banner-${spring.profiles.active}.txt
+  datasource:
+    url: jdbc:mysql://localhost:3317/game_catalog?createDatabaseIfNotExist=true&serverTimezone=UTC
+    username: root
+    password: admin
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        generate_statistics: true
+    show-sql: true
+  mvc:
+    pathmatch:
+      matching-strategy: ant-path-matcher
+    log-request-details: true
+
+server:
+  port: 8085
+
+logging:
+  level:
+    org:
+      springframework:
+        web: DEBUG
+        security: ERROR
+      hibernate: ERROR
+    com:
+      clinica: DEBUG
+  file:
+    path: ArquivoDeLog.log
+
+app:
+  environment: dev

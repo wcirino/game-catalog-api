@@ -1,0 +1,34 @@
+2025-08-25T12:42:06.062-03:00  INFO 24520 --- [game-catalog-api-dev] [restartedMain] c.games.api.GameCatalogApiApplication    : Starting GameCatalogApiApplication using Java 17.0.9 with PID 24520 (C:\aws\project\rest-games\game-catalog-api\game-catalog-api\target\classes started by Willyan Cirino in C:\aws\project\rest-games\game-catalog-api\game-catalog-api)
+2025-08-25T12:42:06.064-03:00  INFO 24520 --- [game-catalog-api-dev] [restartedMain] c.games.api.GameCatalogApiApplication    : The following 1 profile is active: "dev"
+2025-08-25T12:42:06.113-03:00  INFO 24520 --- [game-catalog-api-dev] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-25T12:42:06.113-03:00  INFO 24520 --- [game-catalog-api-dev] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-25T12:42:07.171-03:00  INFO 24520 --- [game-catalog-api-dev] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2025-08-25T12:42:07.187-03:00  INFO 24520 --- [game-catalog-api-dev] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-25T12:42:07.188-03:00  INFO 24520 --- [game-catalog-api-dev] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-08-25T12:42:07.241-03:00  INFO 24520 --- [game-catalog-api-dev] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-25T12:42:07.241-03:00  INFO 24520 --- [game-catalog-api-dev] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1127 ms
+2025-08-25T12:42:07.459-03:00 DEBUG 24520 --- [game-catalog-api-dev] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
+2025-08-25T12:42:07.522-03:00 DEBUG 24520 --- [game-catalog-api-dev] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-08-25T12:42:07.549-03:00 DEBUG 24520 --- [game-catalog-api-dev] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-08-25T12:42:07.600-03:00 DEBUG 24520 --- [game-catalog-api-dev] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-08-25T12:42:07.667-03:00  INFO 24520 --- [game-catalog-api-dev] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-25T12:42:07.709-03:00  INFO 24520 --- [game-catalog-api-dev] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/'
+2025-08-25T12:42:07.718-03:00  INFO 24520 --- [game-catalog-api-dev] [restartedMain] c.games.api.GameCatalogApiApplication    : Started GameCatalogApiApplication in 2.353 seconds (process running for 3.615)
+2025-08-25T13:44:02.389-03:00  INFO 24520 --- [game-catalog-api-dev] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (1 addition, 0 deletions, 2 modifications)
+2025-08-25T13:44:02.396-03:00  INFO 24520 --- [game-catalog-api-dev] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-25T13:44:02.953-03:00  INFO 24520 --- [game-catalog-api-dev] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-25T13:44:03.057-03:00  INFO 24520 --- [game-catalog-api-dev] [restartedMain] c.games.api.GameCatalogApiApplication    : Starting GameCatalogApiApplication using Java 17.0.9 with PID 24520 (C:\aws\project\rest-games\game-catalog-api\game-catalog-api\target\classes started by Willyan Cirino in C:\aws\project\rest-games\game-catalog-api\game-catalog-api)
+2025-08-25T13:44:03.058-03:00  INFO 24520 --- [game-catalog-api-dev] [restartedMain] c.games.api.GameCatalogApiApplication    : The following 1 profile is active: "dev"
+2025-08-25T13:44:03.663-03:00  INFO 24520 --- [game-catalog-api-dev] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2025-08-25T13:44:03.665-03:00  INFO 24520 --- [game-catalog-api-dev] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-25T13:44:03.666-03:00  INFO 24520 --- [game-catalog-api-dev] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-08-25T13:44:03.829-03:00  INFO 24520 --- [game-catalog-api-dev] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-25T13:44:03.829-03:00  INFO 24520 --- [game-catalog-api-dev] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 766 ms
+2025-08-25T13:44:03.874-03:00 DEBUG 24520 --- [game-catalog-api-dev] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
+2025-08-25T13:44:03.904-03:00 DEBUG 24520 --- [game-catalog-api-dev] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-08-25T13:44:03.910-03:00 DEBUG 24520 --- [game-catalog-api-dev] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-08-25T13:44:03.917-03:00 DEBUG 24520 --- [game-catalog-api-dev] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-08-25T13:44:03.942-03:00  INFO 24520 --- [game-catalog-api-dev] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-25T13:44:03.956-03:00  INFO 24520 --- [game-catalog-api-dev] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/'
+2025-08-25T13:44:03.963-03:00  INFO 24520 --- [game-catalog-api-dev] [restartedMain] c.games.api.GameCatalogApiApplication    : Started GameCatalogApiApplication in 0.954 seconds (process running for 3719.861)
+2025-08-25T13:44:03.967-03:00  INFO 24520 --- [game-catalog-api-dev] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
