@@ -1,16 +1,22 @@
 package com.games.api.service.impl;
 
+import java.util.List;
+import java.util.stream.Collectors;
+
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Service;
+
 import com.games.api.dto.OnlineGameDTO;
+import com.games.api.dto.filter.GameFilterDTO;
 import com.games.api.entity.OnlineGame;
 import com.games.api.exception.ResourceNotFoundException;
 import com.games.api.repository.OnlineGameRepository;
+import com.games.api.repository.specification.GameSpecificationBuilder;
 import com.games.api.service.IGameOnlineService;
+
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.stereotype.Service;
-
-import java.util.List;
-import java.util.stream.Collectors;
 
 @Slf4j
 @Service
@@ -38,6 +44,12 @@ public class GameOnlineServiceImpl implements IGameOnlineService {
         log.info("Saving new online game: {}", dto.getTitle());
         OnlineGame saved = repository.save(toEntity(dto));
         return toDTO(saved);
+    }
+    
+    @Override
+    public Page<OnlineGameDTO> search(GameFilterDTO filter, Pageable pageable) {
+        return repository.findAll(GameSpecificationBuilder.build(filter), pageable)
+                         .map(this::toDTO);
     }
 
     @Override

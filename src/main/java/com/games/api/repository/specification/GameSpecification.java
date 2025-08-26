@@ -5,6 +5,11 @@ import com.games.api.entity.GameBase;
 
 public class GameSpecification {
 
+    public static Specification<GameBase> hasId(Long id) {
+        return (root, query, cb) ->
+                id == null ? null : cb.equal(root.get("id"), id);
+    }
+
     public static Specification<GameBase> hasTitle(String title) {
         return (root, query, cb) ->
                 title == null ? null : cb.like(cb.lower(root.get("title")), "%" + title.toLowerCase() + "%");
@@ -30,4 +35,3 @@ public class GameSpecification {
                 active == null ? null : cb.equal(root.get("active"), active);
     }
 }
-

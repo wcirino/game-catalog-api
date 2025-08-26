@@ -1,16 +1,23 @@
 package com.games.api.service.impl;
 
+import java.util.List;
+import java.util.stream.Collectors;
+
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.domain.Specification;
+import org.springframework.stereotype.Service;
+
 import com.games.api.dto.DigitalGameDTO;
+import com.games.api.dto.filter.GameFilterDTO;
 import com.games.api.entity.DigitalGame;
 import com.games.api.exception.ResourceNotFoundException;
 import com.games.api.repository.DigitalGameRepository;
+import com.games.api.repository.specification.GameSpecificationBuilder;
 import com.games.api.service.IGameDigitalService;
+
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.stereotype.Service;
-
-import java.util.List;
-import java.util.stream.Collectors;
 
 @Slf4j
 @Service
@@ -38,6 +45,12 @@ public class GameDigitalServiceImpl implements IGameDigitalService {
         log.info("Saving new digital game: {}", dto.getTitle());
         DigitalGame saved = repository.save(toEntity(dto));
         return toDTO(saved);
+    }
+    
+    @Override
+    public Page<DigitalGameDTO> search(GameFilterDTO filter, Pageable pageable) {
+        Specification<DigitalGame> spec = GameSpecificationBuilder.build(filter);
+        return repository.findAll(spec, pageable).map(this::toDTO);
     }
 
     @Override
