@@ -130,3 +130,10 @@ jobs:
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/game-catalog-api:latest
           build-args: |
             SPRING_PROFILES_ACTIVE=docker
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: docker
+    steps:
+      - name: Deploy Fake
+        run: echo "🚀 Deploy concluído com sucesso! (no futuro: AWS/OpenShift)"
