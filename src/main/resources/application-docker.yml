@@ -5,8 +5,8 @@ spring:
     location: classpath:banner-${spring.profiles.active}.txt
   datasource:
     url: jdbc:mysql://db_base_dev:3306/game_catalog?createDatabaseIfNotExist=true&serverTimezone=UTC
-    username: root
-    password: admin
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:

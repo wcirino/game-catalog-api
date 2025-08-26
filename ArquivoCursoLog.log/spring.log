@@ -1,0 +1,693 @@
+2025-08-26T13:27:03.946-03:00  INFO 6216 --- [api-usuario] [main] c.g.a.controller.ConsoleControllerTest   : Starting ConsoleControllerTest using Java 17.0.9 with PID 6216 (started by Willyan Cirino in C:\aws\project\rest-games\game-catalog-api\game-catalog-api)
+2025-08-26T13:27:03.949-03:00  INFO 6216 --- [api-usuario] [main] c.g.a.controller.ConsoleControllerTest   : The following 1 profile is active: "docker"
+2025-08-26T13:27:03.981-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@23c7cb18
+2025-08-26T13:27:08.056-03:00 DEBUG 6216 --- [api-usuario] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2025-08-26T13:27:08.424-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui/**] in 'resourceHandlerMapping'
+2025-08-26T13:27:08.517-03:00 DEBUG 6216 --- [api-usuario] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-08-26T13:27:08.687-03:00 DEBUG 6216 --- [api-usuario] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-08-26T13:27:08.771-03:00  INFO 6216 --- [api-usuario] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-08-26T13:27:08.771-03:00  INFO 6216 --- [api-usuario] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-08-26T13:27:08.773-03:00  INFO 6216 --- [api-usuario] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2025-08-26T13:27:08.831-03:00  INFO 6216 --- [api-usuario] [main] c.g.a.controller.ConsoleControllerTest   : Started ConsoleControllerTest in 5.913 seconds (process running for 9.115)
+2025-08-26T13:27:09.038-03:00 DEBUG 6216 --- [api-usuario] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.games.api.controller.ConsoleController#update(Long, ConsoleDTO)
+2025-08-26T13:27:09.241-03:00 DEBUG 6216 --- [api-usuario] [main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [ConsoleDTO(id=1, name=PS5 Slim, manufacturer=Sony, releaseYear=2023, createdAt=null, active=true)]
+2025-08-26T13:27:09.245-03:00  INFO 6216 --- [api-usuario] [main] c.g.api.controller.ConsoleController     : PUT /api/consoles/1 body=ConsoleDTO(id=1, name=PS5 Slim, manufacturer=Sony, releaseYear=2023, createdAt=null, active=true)
+2025-08-26T13:27:09.303-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-08-26T13:27:09.305-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ConsoleDTO(id=1, name=PS5 Slim, manufacturer=null, releaseYear=null, createdAt=null, active=null)]
+2025-08-26T13:27:09.557-03:00 DEBUG 6216 --- [api-usuario] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.games.api.controller.ConsoleController#delete(Long)
+2025-08-26T13:27:09.559-03:00  INFO 6216 --- [api-usuario] [main] c.g.api.controller.ConsoleController     : DELETE /api/consoles/99
+2025-08-26T13:27:09.565-03:00 DEBUG 6216 --- [api-usuario] [main] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.games.api.exception.GlobalExceptionHandler#handleResourceNotFound(ResourceNotFoundException)
+2025-08-26T13:27:09.571-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-08-26T13:27:09.571-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{error=Not Found, message=Console not found, timestamp=2025-08-26T13:27:09.566397100, status=404}]
+2025-08-26T13:27:09.586-03:00 DEBUG 6216 --- [api-usuario] [main] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.games.api.exception.ResourceNotFoundException: Console not found]
+2025-08-26T13:27:09.601-03:00 DEBUG 6216 --- [api-usuario] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.games.api.controller.ConsoleController#delete(Long)
+2025-08-26T13:27:09.602-03:00  INFO 6216 --- [api-usuario] [main] c.g.api.controller.ConsoleController     : DELETE /api/consoles/1
+2025-08-26T13:27:09.603-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-08-26T13:27:09.604-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2025-08-26T13:27:09.616-03:00 DEBUG 6216 --- [api-usuario] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.games.api.controller.ConsoleController#getById(Long)
+2025-08-26T13:27:09.617-03:00  INFO 6216 --- [api-usuario] [main] c.g.api.controller.ConsoleController     : GET /api/consoles/99
+2025-08-26T13:27:09.619-03:00 DEBUG 6216 --- [api-usuario] [main] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.games.api.exception.GlobalExceptionHandler#handleResourceNotFound(ResourceNotFoundException)
+2025-08-26T13:27:09.620-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-08-26T13:27:09.621-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{error=Not Found, message=Console not found, timestamp=2025-08-26T13:27:09.620395800, status=404}]
+2025-08-26T13:27:09.623-03:00 DEBUG 6216 --- [api-usuario] [main] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.games.api.exception.ResourceNotFoundException: Console not found]
+2025-08-26T13:27:09.638-03:00 DEBUG 6216 --- [api-usuario] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.games.api.controller.ConsoleController#getById(Long)
+2025-08-26T13:27:09.639-03:00  INFO 6216 --- [api-usuario] [main] c.g.api.controller.ConsoleController     : GET /api/consoles/1
+2025-08-26T13:27:09.640-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-08-26T13:27:09.641-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ConsoleDTO(id=1, name=Xbox Series X, manufacturer=null, releaseYear=null, createdAt=null, active=nul (truncated)...]
+2025-08-26T13:27:09.656-03:00 DEBUG 6216 --- [api-usuario] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.games.api.controller.ConsoleController#create(ConsoleDTO)
+2025-08-26T13:27:09.657-03:00 DEBUG 6216 --- [api-usuario] [main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [ConsoleDTO(id=1, name=Switch, manufacturer=Nintendo, releaseYear=2017, createdAt=null, active=true)]
+2025-08-26T13:27:09.658-03:00  INFO 6216 --- [api-usuario] [main] c.g.api.controller.ConsoleController     : POST /api/consoles body=ConsoleDTO(id=1, name=Switch, manufacturer=Nintendo, releaseYear=2017, createdAt=null, active=true)
+2025-08-26T13:27:09.659-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-08-26T13:27:09.660-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ConsoleDTO(id=1, name=Switch, manufacturer=Nintendo, releaseYear=null, createdAt=null, active=null)]
+2025-08-26T13:27:09.672-03:00 DEBUG 6216 --- [api-usuario] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.games.api.controller.ConsoleController#getAll()
+2025-08-26T13:27:09.673-03:00  INFO 6216 --- [api-usuario] [main] c.g.api.controller.ConsoleController     : GET /api/consoles
+2025-08-26T13:27:09.684-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-08-26T13:27:09.685-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ConsoleDTO(id=1, name=PS5, manufacturer=Sony, releaseYear=null, createdAt=null, active=null)]]
+2025-08-26T13:27:09.706-03:00 DEBUG 6216 --- [api-usuario] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.games.api.controller.ConsoleController#update(Long, ConsoleDTO)
+2025-08-26T13:27:09.708-03:00 DEBUG 6216 --- [api-usuario] [main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [ConsoleDTO(id=99, name=Fake, manufacturer=Fake, releaseYear=2023, createdAt=null, active=true)]
+2025-08-26T13:27:09.708-03:00  INFO 6216 --- [api-usuario] [main] c.g.api.controller.ConsoleController     : PUT /api/consoles/99 body=ConsoleDTO(id=99, name=Fake, manufacturer=Fake, releaseYear=2023, createdAt=null, active=true)
+2025-08-26T13:27:09.709-03:00 DEBUG 6216 --- [api-usuario] [main] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.games.api.exception.GlobalExceptionHandler#handleResourceNotFound(ResourceNotFoundException)
+2025-08-26T13:27:09.710-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-08-26T13:27:09.711-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{error=Not Found, message=Console not found, timestamp=2025-08-26T13:27:09.710124500, status=404}]
+2025-08-26T13:27:09.711-03:00 DEBUG 6216 --- [api-usuario] [main] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.games.api.exception.ResourceNotFoundException: Console not found]
+2025-08-26T13:27:09.768-03:00  INFO 6216 --- [api-usuario] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.games.api.GameCatalogApiApplication for test class com.games.api.controller.GameDigitalControllerTest
+2025-08-26T13:27:09.775-03:00  INFO 6216 --- [api-usuario] [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2025-08-26T13:27:09.876-03:00  INFO 6216 --- [api-usuario] [main] c.g.a.c.GameDigitalControllerTest        : Starting GameDigitalControllerTest using Java 17.0.9 with PID 6216 (started by Willyan Cirino in C:\aws\project\rest-games\game-catalog-api\game-catalog-api)
+2025-08-26T13:27:09.877-03:00  INFO 6216 --- [api-usuario] [main] c.g.a.c.GameDigitalControllerTest        : The following 1 profile is active: "docker"
+2025-08-26T13:27:09.881-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5b9ee280
+2025-08-26T13:27:10.275-03:00 DEBUG 6216 --- [api-usuario] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 8 mappings in 'requestMappingHandlerMapping'
+2025-08-26T13:27:10.325-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui/**] in 'resourceHandlerMapping'
+2025-08-26T13:27:10.335-03:00 DEBUG 6216 --- [api-usuario] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-08-26T13:27:10.347-03:00 DEBUG 6216 --- [api-usuario] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-08-26T13:27:10.361-03:00  INFO 6216 --- [api-usuario] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-08-26T13:27:10.362-03:00  INFO 6216 --- [api-usuario] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-08-26T13:27:10.363-03:00  INFO 6216 --- [api-usuario] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-08-26T13:27:10.375-03:00  INFO 6216 --- [api-usuario] [main] c.g.a.c.GameDigitalControllerTest        : Started GameDigitalControllerTest in 0.6 seconds (process running for 10.659)
+2025-08-26T13:27:10.385-03:00 DEBUG 6216 --- [api-usuario] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.games.api.controller.GameDigitalController#update(Long, DigitalGameDTO)
+2025-08-26T13:27:10.406-03:00 DEBUG 6216 --- [api-usuario] [main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [DigitalGameDTO(id=99, title=Fake, description=null, genre=RPG, releaseYear=null, platform=PC, produc (truncated)...]
+2025-08-26T13:27:10.407-03:00  INFO 6216 --- [api-usuario] [main] c.g.a.controller.GameDigitalController   : PUT /api/games/digital/99 body=DigitalGameDTO(id=99, title=Fake, description=null, genre=RPG, releaseYear=null, platform=PC, productionStudio=null, price=null, active=null, activationKey=null, digitalStore=null, downloadSize=null, licenseExpiration=null, consoleId=null, createdAt=null)
+2025-08-26T13:27:10.409-03:00 DEBUG 6216 --- [api-usuario] [main] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.games.api.exception.GlobalExceptionHandler#handleResourceNotFound(ResourceNotFoundException)
+2025-08-26T13:27:10.411-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-08-26T13:27:10.411-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{error=Not Found, message=Digital game not found, timestamp=2025-08-26T13:27:10.410316600, status=40 (truncated)...]
+2025-08-26T13:27:10.412-03:00 DEBUG 6216 --- [api-usuario] [main] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.games.api.exception.ResourceNotFoundException: Digital game not found]
+2025-08-26T13:27:10.423-03:00 DEBUG 6216 --- [api-usuario] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.games.api.controller.GameDigitalController#update(Long, DigitalGameDTO)
+2025-08-26T13:27:10.424-03:00 DEBUG 6216 --- [api-usuario] [main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [DigitalGameDTO(id=1, title=Elden Ring, description=null, genre=RPG, releaseYear=null, platform=PC, p (truncated)...]
+2025-08-26T13:27:10.425-03:00  INFO 6216 --- [api-usuario] [main] c.g.a.controller.GameDigitalController   : PUT /api/games/digital/1 body=DigitalGameDTO(id=1, title=Elden Ring, description=null, genre=RPG, releaseYear=null, platform=PC, productionStudio=null, price=null, active=null, activationKey=null, digitalStore=null, downloadSize=null, licenseExpiration=null, consoleId=null, createdAt=null)
+2025-08-26T13:27:10.436-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-08-26T13:27:10.436-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [DigitalGameDTO(id=1, title=Elden Ring, description=null, genre=null, releaseYear=null, platform=null (truncated)...]
+2025-08-26T13:27:10.451-03:00 DEBUG 6216 --- [api-usuario] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.games.api.controller.GameDigitalController#search(GameFilterDTO, Pageable)
+2025-08-26T13:27:10.478-03:00  INFO 6216 --- [api-usuario] [main] c.g.a.controller.GameDigitalController   : GET /api/games/digital/search filter=GameFilterDTO(id=null, title=Hollow, genre=null, platform=null, releaseYear=null, active=null, page=0, size=10, sort=id,asc)
+2025-08-26T13:27:10.491-03:00  WARN 6216 --- [api-usuario] [main] ration$PageModule$WarningLoggingModifier : Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2025-08-26T13:27:10.498-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-08-26T13:27:10.498-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing com.games.api.dto.DigitalGameDTO instances]
+2025-08-26T13:27:10.533-03:00 DEBUG 6216 --- [api-usuario] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.games.api.controller.GameDigitalController#getAll()
+2025-08-26T13:27:10.534-03:00  INFO 6216 --- [api-usuario] [main] c.g.a.controller.GameDigitalController   : GET /api/games/digital
+2025-08-26T13:27:10.542-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-08-26T13:27:10.543-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[DigitalGameDTO(id=1, title=Cyberpunk 2077, description=null, genre=null, releaseYear=null, platform (truncated)...]
+2025-08-26T13:27:10.554-03:00 DEBUG 6216 --- [api-usuario] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.games.api.controller.GameDigitalController#getById(Long)
+2025-08-26T13:27:10.555-03:00  INFO 6216 --- [api-usuario] [main] c.g.a.controller.GameDigitalController   : GET /api/games/digital/1
+2025-08-26T13:27:10.556-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-08-26T13:27:10.557-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [DigitalGameDTO(id=1, title=Elden Ring, description=null, genre=null, releaseYear=null, platform=null (truncated)...]
+2025-08-26T13:27:10.564-03:00 DEBUG 6216 --- [api-usuario] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.games.api.controller.GameDigitalController#delete(Long)
+2025-08-26T13:27:10.565-03:00  INFO 6216 --- [api-usuario] [main] c.g.a.controller.GameDigitalController   : DELETE /api/games/digital/1
+2025-08-26T13:27:10.566-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-08-26T13:27:10.567-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2025-08-26T13:27:10.575-03:00 DEBUG 6216 --- [api-usuario] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.games.api.controller.GameDigitalController#delete(Long)
+2025-08-26T13:27:10.576-03:00  INFO 6216 --- [api-usuario] [main] c.g.a.controller.GameDigitalController   : DELETE /api/games/digital/99
+2025-08-26T13:27:10.577-03:00 DEBUG 6216 --- [api-usuario] [main] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.games.api.exception.GlobalExceptionHandler#handleResourceNotFound(ResourceNotFoundException)
+2025-08-26T13:27:10.577-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-08-26T13:27:10.578-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{error=Not Found, message=Digital game not found, timestamp=2025-08-26T13:27:10.577316100, status=40 (truncated)...]
+2025-08-26T13:27:10.578-03:00 DEBUG 6216 --- [api-usuario] [main] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.games.api.exception.ResourceNotFoundException: Digital game not found]
+2025-08-26T13:27:10.620-03:00 DEBUG 6216 --- [api-usuario] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.games.api.controller.GameDigitalController#create(DigitalGameDTO)
+2025-08-26T13:27:10.622-03:00 DEBUG 6216 --- [api-usuario] [main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [DigitalGameDTO(id=1, title=Cyberpunk 2077, description=null, genre=RPG, releaseYear=null, platform=P (truncated)...]
+2025-08-26T13:27:10.623-03:00  INFO 6216 --- [api-usuario] [main] c.g.a.controller.GameDigitalController   : POST /api/games/digital body=DigitalGameDTO(id=1, title=Cyberpunk 2077, description=null, genre=RPG, releaseYear=null, platform=PC, productionStudio=null, price=null, active=null, activationKey=null, digitalStore=null, downloadSize=null, licenseExpiration=null, consoleId=null, createdAt=null)
+2025-08-26T13:27:10.624-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-08-26T13:27:10.625-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [DigitalGameDTO(id=1, title=Cyberpunk 2077, description=null, genre=null, releaseYear=null, platform= (truncated)...]
+2025-08-26T13:27:10.634-03:00 DEBUG 6216 --- [api-usuario] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.games.api.controller.GameDigitalController#getById(Long)
+2025-08-26T13:27:10.636-03:00  INFO 6216 --- [api-usuario] [main] c.g.a.controller.GameDigitalController   : GET /api/games/digital/99
+2025-08-26T13:27:10.637-03:00 DEBUG 6216 --- [api-usuario] [main] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.games.api.exception.GlobalExceptionHandler#handleResourceNotFound(ResourceNotFoundException)
+2025-08-26T13:27:10.638-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-08-26T13:27:10.638-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{error=Not Found, message=Digital game not found, timestamp=2025-08-26T13:27:10.638315800, status=40 (truncated)...]
+2025-08-26T13:27:10.639-03:00 DEBUG 6216 --- [api-usuario] [main] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.games.api.exception.ResourceNotFoundException: Digital game not found]
+2025-08-26T13:27:10.647-03:00 DEBUG 6216 --- [api-usuario] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.games.api.controller.GameDigitalController#search(GameFilterDTO, Pageable)
+2025-08-26T13:27:10.649-03:00  INFO 6216 --- [api-usuario] [main] c.g.a.controller.GameDigitalController   : GET /api/games/digital/search filter=GameFilterDTO(id=null, title=Whatever, genre=null, platform=null, releaseYear=null, active=null, page=0, size=10, sort=id,asc)
+2025-08-26T13:27:10.650-03:00 DEBUG 6216 --- [api-usuario] [main] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.games.api.exception.GlobalExceptionHandler#handleGenericException(Exception)
+2025-08-26T13:27:10.651-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-08-26T13:27:10.651-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{error=Internal Server Error, message=Unexpected error, timestamp=2025-08-26T13:27:10.651317100, sta (truncated)...]
+2025-08-26T13:27:10.652-03:00 DEBUG 6216 --- [api-usuario] [main] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.RuntimeException: Unexpected error]
+2025-08-26T13:27:10.691-03:00  INFO 6216 --- [api-usuario] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.games.api.GameCatalogApiApplication for test class com.games.api.controller.GameOnlineControllerTest
+2025-08-26T13:27:10.695-03:00  INFO 6216 --- [api-usuario] [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2025-08-26T13:27:10.749-03:00  INFO 6216 --- [api-usuario] [main] c.g.a.c.GameOnlineControllerTest         : Starting GameOnlineControllerTest using Java 17.0.9 with PID 6216 (started by Willyan Cirino in C:\aws\project\rest-games\game-catalog-api\game-catalog-api)
+2025-08-26T13:27:10.750-03:00  INFO 6216 --- [api-usuario] [main] c.g.a.c.GameOnlineControllerTest         : The following 1 profile is active: "docker"
+2025-08-26T13:27:10.753-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1ef64e45
+2025-08-26T13:27:11.185-03:00 DEBUG 6216 --- [api-usuario] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 8 mappings in 'requestMappingHandlerMapping'
+2025-08-26T13:27:11.233-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui/**] in 'resourceHandlerMapping'
+2025-08-26T13:27:11.242-03:00 DEBUG 6216 --- [api-usuario] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-08-26T13:27:11.252-03:00 DEBUG 6216 --- [api-usuario] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-08-26T13:27:11.261-03:00  INFO 6216 --- [api-usuario] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-08-26T13:27:11.262-03:00  INFO 6216 --- [api-usuario] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-08-26T13:27:11.263-03:00  INFO 6216 --- [api-usuario] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-08-26T13:27:11.276-03:00  INFO 6216 --- [api-usuario] [main] c.g.a.c.GameOnlineControllerTest         : Started GameOnlineControllerTest in 0.58 seconds (process running for 11.561)
+2025-08-26T13:27:11.292-03:00 DEBUG 6216 --- [api-usuario] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.games.api.controller.GameOnlineController#delete(Long)
+2025-08-26T13:27:11.295-03:00  INFO 6216 --- [api-usuario] [main] c.g.api.controller.GameOnlineController  : DELETE /api/games/online/99
+2025-08-26T13:27:11.297-03:00 DEBUG 6216 --- [api-usuario] [main] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.games.api.exception.GlobalExceptionHandler#handleResourceNotFound(ResourceNotFoundException)
+2025-08-26T13:27:11.299-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-08-26T13:27:11.300-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{error=Not Found, message=Online game not found, timestamp=2025-08-26T13:27:11.297869200, status=404 (truncated)...]
+2025-08-26T13:27:11.302-03:00 DEBUG 6216 --- [api-usuario] [main] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.games.api.exception.ResourceNotFoundException: Online game not found]
+2025-08-26T13:27:11.316-03:00 DEBUG 6216 --- [api-usuario] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.games.api.controller.GameOnlineController#create(OnlineGameDTO)
+2025-08-26T13:27:11.324-03:00 DEBUG 6216 --- [api-usuario] [main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [OnlineGameDTO(id=1, title=Fortnite, description=null, genre=Battle Royale, releaseYear=null, platfor (truncated)...]
+2025-08-26T13:27:11.325-03:00  INFO 6216 --- [api-usuario] [main] c.g.api.controller.GameOnlineController  : POST /api/games/online body=OnlineGameDTO(id=1, title=Fortnite, description=null, genre=Battle Royale, releaseYear=null, platform=PC, productionStudio=null, price=null, active=null, server=null, multiplayer=null, subscriptionPeriod=null, maxPlayers=null, consoleId=null, createdAt=null)
+2025-08-26T13:27:11.336-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-08-26T13:27:11.336-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [OnlineGameDTO(id=1, title=Fortnite, description=null, genre=null, releaseYear=null, platform=null, p (truncated)...]
+2025-08-26T13:27:11.347-03:00 DEBUG 6216 --- [api-usuario] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.games.api.controller.GameOnlineController#getById(Long)
+2025-08-26T13:27:11.348-03:00  INFO 6216 --- [api-usuario] [main] c.g.api.controller.GameOnlineController  : GET /api/games/online/99
+2025-08-26T13:27:11.350-03:00 DEBUG 6216 --- [api-usuario] [main] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.games.api.exception.GlobalExceptionHandler#handleResourceNotFound(ResourceNotFoundException)
+2025-08-26T13:27:11.350-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-08-26T13:27:11.351-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{error=Not Found, message=Online game not found, timestamp=2025-08-26T13:27:11.350867500, status=404 (truncated)...]
+2025-08-26T13:27:11.351-03:00 DEBUG 6216 --- [api-usuario] [main] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.games.api.exception.ResourceNotFoundException: Online game not found]
+2025-08-26T13:27:11.362-03:00 DEBUG 6216 --- [api-usuario] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.games.api.controller.GameOnlineController#delete(Long)
+2025-08-26T13:27:11.362-03:00  INFO 6216 --- [api-usuario] [main] c.g.api.controller.GameOnlineController  : DELETE /api/games/online/1
+2025-08-26T13:27:11.364-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-08-26T13:27:11.364-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2025-08-26T13:27:11.375-03:00 DEBUG 6216 --- [api-usuario] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.games.api.controller.GameOnlineController#update(Long, OnlineGameDTO)
+2025-08-26T13:27:11.376-03:00 DEBUG 6216 --- [api-usuario] [main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [OnlineGameDTO(id=99, title=Fake, description=null, genre=MOBA, releaseYear=null, platform=PC, produc (truncated)...]
+2025-08-26T13:27:11.377-03:00  INFO 6216 --- [api-usuario] [main] c.g.api.controller.GameOnlineController  : PUT /api/games/online/99 body=OnlineGameDTO(id=99, title=Fake, description=null, genre=MOBA, releaseYear=null, platform=PC, productionStudio=null, price=null, active=null, server=null, multiplayer=null, subscriptionPeriod=null, maxPlayers=null, consoleId=null, createdAt=null)
+2025-08-26T13:27:11.378-03:00 DEBUG 6216 --- [api-usuario] [main] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.games.api.exception.GlobalExceptionHandler#handleResourceNotFound(ResourceNotFoundException)
+2025-08-26T13:27:11.378-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-08-26T13:27:11.379-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{error=Not Found, message=Online game not found, timestamp=2025-08-26T13:27:11.378868600, status=404 (truncated)...]
+2025-08-26T13:27:11.379-03:00 DEBUG 6216 --- [api-usuario] [main] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.games.api.exception.ResourceNotFoundException: Online game not found]
+2025-08-26T13:27:11.391-03:00 DEBUG 6216 --- [api-usuario] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.games.api.controller.GameOnlineController#update(Long, OnlineGameDTO)
+2025-08-26T13:27:11.392-03:00 DEBUG 6216 --- [api-usuario] [main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [OnlineGameDTO(id=1, title=League of Legends, description=null, genre=MOBA, releaseYear=null, platfor (truncated)...]
+2025-08-26T13:27:11.392-03:00  INFO 6216 --- [api-usuario] [main] c.g.api.controller.GameOnlineController  : PUT /api/games/online/1 body=OnlineGameDTO(id=1, title=League of Legends, description=null, genre=MOBA, releaseYear=null, platform=PC, productionStudio=null, price=null, active=null, server=null, multiplayer=null, subscriptionPeriod=null, maxPlayers=null, consoleId=null, createdAt=null)
+2025-08-26T13:27:11.393-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-08-26T13:27:11.394-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [OnlineGameDTO(id=1, title=League of Legends, description=null, genre=null, releaseYear=null, platfor (truncated)...]
+2025-08-26T13:27:11.403-03:00 DEBUG 6216 --- [api-usuario] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.games.api.controller.GameOnlineController#getById(Long)
+2025-08-26T13:27:11.403-03:00  INFO 6216 --- [api-usuario] [main] c.g.api.controller.GameOnlineController  : GET /api/games/online/1
+2025-08-26T13:27:11.404-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-08-26T13:27:11.404-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [OnlineGameDTO(id=1, title=League of Legends, description=null, genre=null, releaseYear=null, platfor (truncated)...]
+2025-08-26T13:27:11.413-03:00 DEBUG 6216 --- [api-usuario] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.games.api.controller.GameOnlineController#search(GameFilterDTO, Pageable)
+2025-08-26T13:27:11.416-03:00  INFO 6216 --- [api-usuario] [main] c.g.api.controller.GameOnlineController  : GET /api/games/online/search filter=GameFilterDTO(id=null, title=Whatever, genre=null, platform=null, releaseYear=null, active=null, page=0, size=10, sort=id,asc)
+2025-08-26T13:27:11.417-03:00 DEBUG 6216 --- [api-usuario] [main] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.games.api.exception.GlobalExceptionHandler#handleGenericException(Exception)
+2025-08-26T13:27:11.418-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-08-26T13:27:11.418-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{error=Internal Server Error, message=Unexpected error, timestamp=2025-08-26T13:27:11.417868, status (truncated)...]
+2025-08-26T13:27:11.419-03:00 DEBUG 6216 --- [api-usuario] [main] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.RuntimeException: Unexpected error]
+2025-08-26T13:27:11.427-03:00 DEBUG 6216 --- [api-usuario] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.games.api.controller.GameOnlineController#getAll()
+2025-08-26T13:27:11.428-03:00  INFO 6216 --- [api-usuario] [main] c.g.api.controller.GameOnlineController  : GET /api/games/online
+2025-08-26T13:27:11.432-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-08-26T13:27:11.432-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[OnlineGameDTO(id=1, title=Fortnite, description=null, genre=null, releaseYear=null, platform=null,  (truncated)...]
+2025-08-26T13:27:11.440-03:00 DEBUG 6216 --- [api-usuario] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.games.api.controller.GameOnlineController#search(GameFilterDTO, Pageable)
+2025-08-26T13:27:11.442-03:00  INFO 6216 --- [api-usuario] [main] c.g.api.controller.GameOnlineController  : GET /api/games/online/search filter=GameFilterDTO(id=null, title=Valorant, genre=null, platform=null, releaseYear=null, active=null, page=0, size=10, sort=id,asc)
+2025-08-26T13:27:11.445-03:00  WARN 6216 --- [api-usuario] [main] ration$PageModule$WarningLoggingModifier : Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2025-08-26T13:27:11.452-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-08-26T13:27:11.452-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing com.games.api.dto.OnlineGameDTO instances]
+2025-08-26T13:27:11.487-03:00  INFO 6216 --- [api-usuario] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.games.api.GameCatalogApiApplication for test class com.games.api.controller.GamePhysicalControllerTest
+2025-08-26T13:27:11.492-03:00  INFO 6216 --- [api-usuario] [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2025-08-26T13:27:11.552-03:00  INFO 6216 --- [api-usuario] [main] c.g.a.c.GamePhysicalControllerTest       : Starting GamePhysicalControllerTest using Java 17.0.9 with PID 6216 (started by Willyan Cirino in C:\aws\project\rest-games\game-catalog-api\game-catalog-api)
+2025-08-26T13:27:11.552-03:00  INFO 6216 --- [api-usuario] [main] c.g.a.c.GamePhysicalControllerTest       : The following 1 profile is active: "docker"
+2025-08-26T13:27:11.557-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@6b57b1c7
+2025-08-26T13:27:11.832-03:00 DEBUG 6216 --- [api-usuario] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 8 mappings in 'requestMappingHandlerMapping'
+2025-08-26T13:27:11.870-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui/**] in 'resourceHandlerMapping'
+2025-08-26T13:27:11.875-03:00 DEBUG 6216 --- [api-usuario] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-08-26T13:27:11.881-03:00 DEBUG 6216 --- [api-usuario] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-08-26T13:27:11.888-03:00  INFO 6216 --- [api-usuario] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-08-26T13:27:11.888-03:00  INFO 6216 --- [api-usuario] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-08-26T13:27:11.889-03:00  INFO 6216 --- [api-usuario] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-08-26T13:27:11.897-03:00  INFO 6216 --- [api-usuario] [main] c.g.a.c.GamePhysicalControllerTest       : Started GamePhysicalControllerTest in 0.405 seconds (process running for 12.182)
+2025-08-26T13:27:11.904-03:00 DEBUG 6216 --- [api-usuario] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.games.api.controller.GamePhysicalController#update(Long, PhysicalGameDTO)
+2025-08-26T13:27:11.911-03:00 DEBUG 6216 --- [api-usuario] [main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [PhysicalGameDTO(id=99, title=Fake, description=null, genre=Sports, releaseYear=null, platform=PS5, p (truncated)...]
+2025-08-26T13:27:11.911-03:00  INFO 6216 --- [api-usuario] [main] c.g.a.controller.GamePhysicalController  : PUT /api/games/physical/99 body=PhysicalGameDTO(id=99, title=Fake, description=null, genre=Sports, releaseYear=null, platform=PS5, productionStudio=null, price=null, active=null, mediaType=null, conditionStatus=null, manualLanguage=null, hasBox=null, consoleId=null, createdAt=null)
+2025-08-26T13:27:11.912-03:00 DEBUG 6216 --- [api-usuario] [main] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.games.api.exception.GlobalExceptionHandler#handleResourceNotFound(ResourceNotFoundException)
+2025-08-26T13:27:11.913-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-08-26T13:27:11.914-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{error=Not Found, message=Physical game not found, timestamp=2025-08-26T13:27:11.912869100, status=4 (truncated)...]
+2025-08-26T13:27:11.914-03:00 DEBUG 6216 --- [api-usuario] [main] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.games.api.exception.ResourceNotFoundException: Physical game not found]
+2025-08-26T13:27:11.921-03:00 DEBUG 6216 --- [api-usuario] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.games.api.controller.GamePhysicalController#getById(Long)
+2025-08-26T13:27:11.922-03:00  INFO 6216 --- [api-usuario] [main] c.g.a.controller.GamePhysicalController  : GET /api/games/physical/1
+2025-08-26T13:27:11.930-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-08-26T13:27:11.930-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [PhysicalGameDTO(id=1, title=FIFA 23, description=null, genre=null, releaseYear=null, platform=null,  (truncated)...]
+2025-08-26T13:27:11.936-03:00 DEBUG 6216 --- [api-usuario] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.games.api.controller.GamePhysicalController#getById(Long)
+2025-08-26T13:27:11.936-03:00  INFO 6216 --- [api-usuario] [main] c.g.a.controller.GamePhysicalController  : GET /api/games/physical/99
+2025-08-26T13:27:11.937-03:00 DEBUG 6216 --- [api-usuario] [main] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.games.api.exception.GlobalExceptionHandler#handleResourceNotFound(ResourceNotFoundException)
+2025-08-26T13:27:11.937-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-08-26T13:27:11.938-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{error=Not Found, message=Physical game not found, timestamp=2025-08-26T13:27:11.937867, status=404}]
+2025-08-26T13:27:11.938-03:00 DEBUG 6216 --- [api-usuario] [main] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.games.api.exception.ResourceNotFoundException: Physical game not found]
+2025-08-26T13:27:11.945-03:00 DEBUG 6216 --- [api-usuario] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.games.api.controller.GamePhysicalController#create(PhysicalGameDTO)
+2025-08-26T13:27:11.946-03:00 DEBUG 6216 --- [api-usuario] [main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [PhysicalGameDTO(id=1, title=FIFA 23, description=null, genre=Sports, releaseYear=null, platform=PS5, (truncated)...]
+2025-08-26T13:27:11.946-03:00  INFO 6216 --- [api-usuario] [main] c.g.a.controller.GamePhysicalController  : POST /api/games/physical body=PhysicalGameDTO(id=1, title=FIFA 23, description=null, genre=Sports, releaseYear=null, platform=PS5, productionStudio=null, price=null, active=null, mediaType=null, conditionStatus=null, manualLanguage=null, hasBox=null, consoleId=null, createdAt=null)
+2025-08-26T13:27:11.946-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-08-26T13:27:11.947-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [PhysicalGameDTO(id=1, title=FIFA 23, description=null, genre=null, releaseYear=null, platform=null,  (truncated)...]
+2025-08-26T13:27:11.951-03:00 DEBUG 6216 --- [api-usuario] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.games.api.controller.GamePhysicalController#delete(Long)
+2025-08-26T13:27:11.952-03:00  INFO 6216 --- [api-usuario] [main] c.g.a.controller.GamePhysicalController  : DELETE /api/games/physical/99
+2025-08-26T13:27:11.953-03:00 DEBUG 6216 --- [api-usuario] [main] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.games.api.exception.GlobalExceptionHandler#handleResourceNotFound(ResourceNotFoundException)
+2025-08-26T13:27:11.953-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-08-26T13:27:11.953-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{error=Not Found, message=Physical game not found, timestamp=2025-08-26T13:27:11.953866200, status=4 (truncated)...]
+2025-08-26T13:27:11.954-03:00 DEBUG 6216 --- [api-usuario] [main] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.games.api.exception.ResourceNotFoundException: Physical game not found]
+2025-08-26T13:27:11.960-03:00 DEBUG 6216 --- [api-usuario] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.games.api.controller.GamePhysicalController#getAll()
+2025-08-26T13:27:11.961-03:00  INFO 6216 --- [api-usuario] [main] c.g.a.controller.GamePhysicalController  : GET /api/games/physical
+2025-08-26T13:27:11.964-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-08-26T13:27:11.964-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[PhysicalGameDTO(id=1, title=FIFA 23, description=null, genre=null, releaseYear=null, platform=null, (truncated)...]
+2025-08-26T13:27:11.970-03:00 DEBUG 6216 --- [api-usuario] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.games.api.controller.GamePhysicalController#delete(Long)
+2025-08-26T13:27:11.970-03:00  INFO 6216 --- [api-usuario] [main] c.g.a.controller.GamePhysicalController  : DELETE /api/games/physical/1
+2025-08-26T13:27:11.972-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-08-26T13:27:11.972-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2025-08-26T13:27:11.977-03:00 DEBUG 6216 --- [api-usuario] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.games.api.controller.GamePhysicalController#update(Long, PhysicalGameDTO)
+2025-08-26T13:27:11.978-03:00 DEBUG 6216 --- [api-usuario] [main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [PhysicalGameDTO(id=1, title=PES 23, description=null, genre=Sports, releaseYear=null, platform=PS5,  (truncated)...]
+2025-08-26T13:27:11.978-03:00  INFO 6216 --- [api-usuario] [main] c.g.a.controller.GamePhysicalController  : PUT /api/games/physical/1 body=PhysicalGameDTO(id=1, title=PES 23, description=null, genre=Sports, releaseYear=null, platform=PS5, productionStudio=null, price=null, active=null, mediaType=null, conditionStatus=null, manualLanguage=null, hasBox=null, consoleId=null, createdAt=null)
+2025-08-26T13:27:11.979-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-08-26T13:27:11.979-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [PhysicalGameDTO(id=1, title=PES 23, description=null, genre=null, releaseYear=null, platform=null, p (truncated)...]
+2025-08-26T13:27:11.986-03:00 DEBUG 6216 --- [api-usuario] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.games.api.controller.GamePhysicalController#search(GameFilterDTO, Pageable)
+2025-08-26T13:27:11.989-03:00  INFO 6216 --- [api-usuario] [main] c.g.a.controller.GamePhysicalController  : GET /api/games/physical/search filter=GameFilterDTO(id=null, title=Whatever, genre=null, platform=null, releaseYear=null, active=null, page=0, size=10, sort=id,asc)
+2025-08-26T13:27:11.991-03:00 DEBUG 6216 --- [api-usuario] [main] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.games.api.exception.GlobalExceptionHandler#handleGenericException(Exception)
+2025-08-26T13:27:11.991-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-08-26T13:27:11.992-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{error=Internal Server Error, message=Unexpected error, timestamp=2025-08-26T13:27:11.991867600, sta (truncated)...]
+2025-08-26T13:27:11.993-03:00 DEBUG 6216 --- [api-usuario] [main] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.RuntimeException: Unexpected error]
+2025-08-26T13:27:12.002-03:00 DEBUG 6216 --- [api-usuario] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.games.api.controller.GamePhysicalController#search(GameFilterDTO, Pageable)
+2025-08-26T13:27:12.004-03:00  INFO 6216 --- [api-usuario] [main] c.g.a.controller.GamePhysicalController  : GET /api/games/physical/search filter=GameFilterDTO(id=null, title=NBA, genre=null, platform=null, releaseYear=null, active=null, page=0, size=10, sort=id,asc)
+2025-08-26T13:27:12.007-03:00  WARN 6216 --- [api-usuario] [main] ration$PageModule$WarningLoggingModifier : Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2025-08-26T13:27:12.015-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-08-26T13:27:12.015-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing com.games.api.dto.PhysicalGameDTO instances]
+2025-08-26T13:27:12.028-03:00  INFO 6216 --- [api-usuario] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.games.api.GameCatalogApiApplicationTests]: GameCatalogApiApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-08-26T13:27:12.043-03:00  INFO 6216 --- [api-usuario] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.games.api.GameCatalogApiApplication for test class com.games.api.GameCatalogApiApplicationTests
+2025-08-26T13:27:12.053-03:00  INFO 6216 --- [api-usuario] [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2025-08-26T13:27:12.087-03:00  INFO 6216 --- [api-usuario] [main] c.g.api.GameCatalogApiApplicationTests   : Starting GameCatalogApiApplicationTests using Java 17.0.9 with PID 6216 (started by Willyan Cirino in C:\aws\project\rest-games\game-catalog-api\game-catalog-api)
+2025-08-26T13:27:12.087-03:00  INFO 6216 --- [api-usuario] [main] c.g.api.GameCatalogApiApplicationTests   : The following 1 profile is active: "docker"
+2025-08-26T13:27:12.090-03:00 DEBUG 6216 --- [api-usuario] [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3a5ecb62
+2025-08-26T13:27:13.201-03:00  INFO 6216 --- [api-usuario] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-26T13:27:13.300-03:00  INFO 6216 --- [api-usuario] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 80 ms. Found 4 JPA repository interfaces.
+2025-08-26T13:27:14.309-03:00  INFO 6216 --- [api-usuario] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-26T13:27:14.387-03:00  INFO 6216 --- [api-usuario] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-26T13:27:23.735-03:00 ERROR 6216 --- [api-usuario] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2025-08-26T13:27:25.515-03:00  INFO 6216 --- [api-usuario] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-26T13:27:26.527-03:00 ERROR 6216 --- [api-usuario] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2025-08-26T13:27:26.530-03:00 ERROR 6216 --- [api-usuario] [main] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.] [n/a]
+2025-08-26T13:27:26.531-03:00  WARN 6216 --- [api-usuario] [main] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.] [n/a]
+2025-08-26T13:27:26.559-03:00  INFO 6216 --- [api-usuario] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-08-26T13:27:26.614-03:00 ERROR 6216 --- [api-usuario] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.] [n/a]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826) ~[spring-beans-6.2.10.jar:6.2.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.10.jar:6.2.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.10.jar:6.2.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.10.jar:6.2.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.10.jar:6.2.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.10.jar:6.2.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.10.jar:6.2.10]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.10.jar:6.2.10]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.10.jar:6.2.10]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.10-SNAPSHOT.jar:3.4.10-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.10-SNAPSHOT.jar:3.4.10-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.10-SNAPSHOT.jar:3.4.10-SNAPSHOT]
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:144) ~[spring-boot-test-3.4.10-SNAPSHOT.jar:3.4.10-SNAPSHOT]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58) ~[spring-core-6.2.10.jar:6.2.10]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46) ~[spring-core-6.2.10.jar:6.2.10]
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1461) ~[spring-boot-3.4.10-SNAPSHOT.jar:3.4.10-SNAPSHOT]
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:563) ~[spring-boot-test-3.4.10-SNAPSHOT.jar:3.4.10-SNAPSHOT]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:144) ~[spring-boot-test-3.4.10-SNAPSHOT.jar:3.4.10-SNAPSHOT]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:110) ~[spring-boot-test-3.4.10-SNAPSHOT.jar:3.4.10-SNAPSHOT]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:200) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:139) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:159) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:378) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:383) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$12(ClassBasedTestDescriptor.java:378) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:377) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$7(ClassBasedTestDescriptor.java:290) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:289) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:279) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at java.base/java.util.Optional.orElseGet(Optional.java:364) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$6(ClassBasedTestDescriptor.java:278) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$1(TestMethodTestDescriptor.java:105) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:104) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:68) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:128) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:128) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56) ~[surefire-junit-platform-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:194) ~[surefire-junit-platform-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150) ~[surefire-junit-platform-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124) ~[surefire-junit-platform-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) ~[surefire-booter-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) ~[surefire-booter-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) ~[surefire-booter-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) ~[surefire-booter-3.5.3.jar:3.5.3]
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.] [n/a]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:431) ~[spring-orm-6.2.10.jar:6.2.10]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.10.jar:6.2.10]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.10.jar:6.2.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873) ~[spring-beans-6.2.10.jar:6.2.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.2.10.jar:6.2.10]
+	... 95 common frames omitted
+Caused by: org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.] [n/a]
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:100) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:74) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:39) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:63) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcDatabaseMetaData(ImprovedExtractionContextImpl.java:70) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.processTableResultSet(InformationExtractorJdbcDatabaseMetaDataImpl.java:65) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
+	at org.hibernate.tool.schema.extract.internal.AbstractInformationExtractorImpl.getTables(AbstractInformationExtractorImpl.java:570) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.getTablesInformation(DatabaseInformationImpl.java:122) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:72) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:233) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:112) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:280) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421) ~[na:na]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:324) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:463) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1517) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.10.jar:6.2.10]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.10.jar:6.2.10]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.10.jar:6.2.10]
+	... 99 common frames omitted
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:165) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:55) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:839) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:415) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111) ~[HikariCP-5.1.0.jar:na]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:485) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:46) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
+	... 120 common frames omitted
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[na:na]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:52) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:95) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:140) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:156) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:79) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:142) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:963) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	... 133 common frames omitted
+Caused by: java.net.UnknownHostException: db_base_dev
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:801) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1532) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1384) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1305) ~[na:na]
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:121) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:53) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	... 136 common frames omitted
+
+2025-08-26T13:27:26.638-03:00  WARN 6216 --- [api-usuario] [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] to prepare test instance [com.games.api.GameCatalogApiApplicationTests@178659ef]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext for [WebMergedContextConfiguration@bd69b3c testClass = com.games.api.GameCatalogApiApplicationTests, locations = [], classes = [com.games.api.GameCatalogApiApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true"], contextCustomizers = [org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@476ec9d0, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@43effd89, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@6e65fc8b, org.springframework.boot.test.web.reactor.netty.DisableReactorResourceFactoryGlobalResourcesContextCustomizerFactory$DisableReactorResourceFactoryGlobalResourcesContextCustomizerCustomizer@3b6c624, org.springframework.boot.test.autoconfigure.OnFailureConditionReportContextCustomizerFactory$OnFailureConditionReportContextCustomizer@5754de72, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@60d1b21f, org.springframework.test.context.support.DynamicPropertiesContextCustomizer@0, org.springframework.boot.test.context.SpringBootTestAnnotation@b2a4ebd], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:180) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:200) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:139) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:159) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:378) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:383) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$12(ClassBasedTestDescriptor.java:378) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:377) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$7(ClassBasedTestDescriptor.java:290) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:289) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:279) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at java.base/java.util.Optional.orElseGet(Optional.java:364) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$6(ClassBasedTestDescriptor.java:278) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$1(TestMethodTestDescriptor.java:105) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:104) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:68) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:128) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:128) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56) ~[surefire-junit-platform-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:194) ~[surefire-junit-platform-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150) ~[surefire-junit-platform-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124) ~[surefire-junit-platform-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) ~[surefire-booter-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) ~[surefire-booter-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) ~[surefire-booter-3.5.3.jar:3.5.3]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) ~[surefire-booter-3.5.3.jar:3.5.3]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.] [n/a]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826) ~[spring-beans-6.2.10.jar:6.2.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.10.jar:6.2.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.10.jar:6.2.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.10.jar:6.2.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.10.jar:6.2.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.10.jar:6.2.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.10.jar:6.2.10]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.10.jar:6.2.10]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.10.jar:6.2.10]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.10-SNAPSHOT.jar:3.4.10-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.10-SNAPSHOT.jar:3.4.10-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.10-SNAPSHOT.jar:3.4.10-SNAPSHOT]
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:144) ~[spring-boot-test-3.4.10-SNAPSHOT.jar:3.4.10-SNAPSHOT]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58) ~[spring-core-6.2.10.jar:6.2.10]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46) ~[spring-core-6.2.10.jar:6.2.10]
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1461) ~[spring-boot-3.4.10-SNAPSHOT.jar:3.4.10-SNAPSHOT]
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:563) ~[spring-boot-test-3.4.10-SNAPSHOT.jar:3.4.10-SNAPSHOT]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:144) ~[spring-boot-test-3.4.10-SNAPSHOT.jar:3.4.10-SNAPSHOT]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:110) ~[spring-boot-test-3.4.10-SNAPSHOT.jar:3.4.10-SNAPSHOT]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152) ~[spring-test-6.2.10.jar:6.2.10]
+	... 75 common frames omitted
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.] [n/a]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:431) ~[spring-orm-6.2.10.jar:6.2.10]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.10.jar:6.2.10]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.10.jar:6.2.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873) ~[spring-beans-6.2.10.jar:6.2.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.2.10.jar:6.2.10]
+	... 95 common frames omitted
+Caused by: org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.] [n/a]
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:100) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:74) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:39) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:63) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcDatabaseMetaData(ImprovedExtractionContextImpl.java:70) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.processTableResultSet(InformationExtractorJdbcDatabaseMetaDataImpl.java:65) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
+	at org.hibernate.tool.schema.extract.internal.AbstractInformationExtractorImpl.getTables(AbstractInformationExtractorImpl.java:570) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.getTablesInformation(DatabaseInformationImpl.java:122) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:72) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:233) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:112) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:280) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421) ~[na:na]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:324) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:463) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1517) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.10.jar:6.2.10]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.10.jar:6.2.10]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.10.jar:6.2.10]
+	... 99 common frames omitted
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:165) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:55) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:839) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:415) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111) ~[HikariCP-5.1.0.jar:na]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:485) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:46) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
+	... 120 common frames omitted
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[na:na]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:52) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:95) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:140) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:156) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:79) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:142) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:963) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	... 133 common frames omitted
+Caused by: java.net.UnknownHostException: db_base_dev
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:801) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1532) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1384) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1305) ~[na:na]
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:121) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:53) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	... 136 common frames omitted
+
+2025-08-26T13:27:26.887-03:00  INFO 6216 --- [api-usuario] [main] c.g.api.service.impl.ConsoleServiceImpl  : Updating console with id: 1
+2025-08-26T13:27:26.904-03:00  INFO 6216 --- [api-usuario] [main] c.g.api.service.impl.ConsoleServiceImpl  : Updating console with id: 99
+2025-08-26T13:27:26.908-03:00  INFO 6216 --- [api-usuario] [main] c.g.api.service.impl.ConsoleServiceImpl  : Deleting console with id: 1
+2025-08-26T13:27:26.911-03:00  INFO 6216 --- [api-usuario] [main] c.g.api.service.impl.ConsoleServiceImpl  : Deleting console with id: 99
+2025-08-26T13:27:26.914-03:00  INFO 6216 --- [api-usuario] [main] c.g.api.service.impl.ConsoleServiceImpl  : Fetching console by id: 1
+2025-08-26T13:27:26.917-03:00  INFO 6216 --- [api-usuario] [main] c.g.api.service.impl.ConsoleServiceImpl  : Fetching console by id: 99
+2025-08-26T13:27:26.920-03:00  INFO 6216 --- [api-usuario] [main] c.g.api.service.impl.ConsoleServiceImpl  : Fetching all consoles...
+2025-08-26T13:27:26.924-03:00  INFO 6216 --- [api-usuario] [main] c.g.api.service.impl.ConsoleServiceImpl  : Saving new console: PS5
+2025-08-26T13:27:27.017-03:00  INFO 6216 --- [api-usuario] [main] c.g.a.s.impl.GameDigitalServiceImpl      : Updating digital game with id: 99
+2025-08-26T13:27:27.020-03:00  INFO 6216 --- [api-usuario] [main] c.g.a.s.impl.GameDigitalServiceImpl      : Updating digital game with id: 1
+2025-08-26T13:27:27.027-03:00  INFO 6216 --- [api-usuario] [main] c.g.a.s.impl.GameDigitalServiceImpl      : Fetching all digital games...
+2025-08-26T13:27:27.031-03:00  INFO 6216 --- [api-usuario] [main] c.g.a.s.impl.GameDigitalServiceImpl      : Fetching digital game by id: 1
+2025-08-26T13:27:27.034-03:00  INFO 6216 --- [api-usuario] [main] c.g.a.s.impl.GameDigitalServiceImpl      : Deleting digital game with id: 1
+2025-08-26T13:27:27.036-03:00  INFO 6216 --- [api-usuario] [main] c.g.a.s.impl.GameDigitalServiceImpl      : Fetching digital game by id: 99
+2025-08-26T13:27:27.039-03:00  INFO 6216 --- [api-usuario] [main] c.g.a.s.impl.GameDigitalServiceImpl      : Deleting digital game with id: 99
+2025-08-26T13:27:27.043-03:00  INFO 6216 --- [api-usuario] [main] c.g.a.s.impl.GameDigitalServiceImpl      : Saving new digital game: Cyberpunk 2077
+2025-08-26T13:27:27.145-03:00  INFO 6216 --- [api-usuario] [main] c.g.a.s.impl.GameOnlineServiceImpl       : Deleting online game with id: 1
+2025-08-26T13:27:27.148-03:00  INFO 6216 --- [api-usuario] [main] c.g.a.s.impl.GameOnlineServiceImpl       : Updating online game with id: 1
+2025-08-26T13:27:27.150-03:00  INFO 6216 --- [api-usuario] [main] c.g.a.s.impl.GameOnlineServiceImpl       : Deleting online game with id: 99
+2025-08-26T13:27:27.153-03:00  INFO 6216 --- [api-usuario] [main] c.g.a.s.impl.GameOnlineServiceImpl       : Updating online game with id: 99
+2025-08-26T13:27:27.155-03:00  INFO 6216 --- [api-usuario] [main] c.g.a.s.impl.GameOnlineServiceImpl       : Saving new online game: Fortnite
+2025-08-26T13:27:27.156-03:00  INFO 6216 --- [api-usuario] [main] c.g.a.s.impl.GameOnlineServiceImpl       : Fetching online game by id: 1
+2025-08-26T13:27:27.158-03:00  INFO 6216 --- [api-usuario] [main] c.g.a.s.impl.GameOnlineServiceImpl       : Fetching all online games...
+2025-08-26T13:27:27.162-03:00  INFO 6216 --- [api-usuario] [main] c.g.a.s.impl.GameOnlineServiceImpl       : Fetching online game by id: 99
+2025-08-26T13:27:27.239-03:00  INFO 6216 --- [api-usuario] [main] c.g.a.s.impl.GamePhysicalServiceImpl     : Saving new physical game: FIFA 23
+2025-08-26T13:27:27.242-03:00  INFO 6216 --- [api-usuario] [main] c.g.a.s.impl.GamePhysicalServiceImpl     : Fetching physical game by id: 1
+2025-08-26T13:27:27.245-03:00  INFO 6216 --- [api-usuario] [main] c.g.a.s.impl.GamePhysicalServiceImpl     : Updating physical game with id: 99
+2025-08-26T13:27:27.248-03:00  INFO 6216 --- [api-usuario] [main] c.g.a.s.impl.GamePhysicalServiceImpl     : Fetching all physical games...
+2025-08-26T13:27:27.251-03:00  INFO 6216 --- [api-usuario] [main] c.g.a.s.impl.GamePhysicalServiceImpl     : Deleting physical game with id: 99
+2025-08-26T13:27:27.253-03:00  INFO 6216 --- [api-usuario] [main] c.g.a.s.impl.GamePhysicalServiceImpl     : Deleting physical game with id: 1
+2025-08-26T13:27:27.256-03:00  INFO 6216 --- [api-usuario] [main] c.g.a.s.impl.GamePhysicalServiceImpl     : Fetching physical game by id: 99
+2025-08-26T13:27:27.258-03:00  INFO 6216 --- [api-usuario] [main] c.g.a.s.impl.GamePhysicalServiceImpl     : Updating physical game with id: 1
+2025-08-26T13:27:27.279-03:00 DEBUG 6216 --- [api-usuario] [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@23c7cb18, started on Tue Aug 26 13:27:03 BRT 2025
+2025-08-26T13:27:27.283-03:00 DEBUG 6216 --- [api-usuario] [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@5b9ee280, started on Tue Aug 26 13:27:09 BRT 2025
+2025-08-26T13:27:27.284-03:00 DEBUG 6216 --- [api-usuario] [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@1ef64e45, started on Tue Aug 26 13:27:10 BRT 2025
+2025-08-26T13:27:27.285-03:00 DEBUG 6216 --- [api-usuario] [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@6b57b1c7, started on Tue Aug 26 13:27:11 BRT 2025
