@@ -1,3 +1,18 @@
 spring:
   profiles:
-    active: dev
+    active: docker
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+  endpoint:
+    health:
+      show-details: always
+
+info:
+  app:
+    name: Game Catalog API
+    description: API para catálogo de jogos
+    version: ${project.version}
