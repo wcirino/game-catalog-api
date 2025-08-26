@@ -80,20 +80,20 @@ O **Game Catalog API** permite:
 
 A API utiliza o Spring Boot Actuator para expor endpoints de monitoramento e métricas.
 
-Lista de endpoints expostos
-👉 http://localhost:8085/actuator
+- Lista de endpoints expostos
+- 👉 http://localhost:8085/actuator
 
-Health check
-👉 http://localhost:8085/actuator/health
+- Health check
+- 👉 http://localhost:8085/actuator/health
 
-Informações da aplicação
-👉 http://localhost:8085/actuator/info
+- Informações da aplicação
+- 👉 http://localhost:8085/actuator/info
 
-Métricas disponíveis
-👉 http://localhost:8085/actuator/metrics
+- Métricas disponíveis
+- 👉 http://localhost:8085/actuator/metrics
 
-Exemplo de métrica específica
-👉 http://localhost:8085/actuator/metrics/jvm.memory.used
+- Exemplo de métrica específica
+- 👉 http://localhost:8085/actuator/metrics/jvm.memory.used
 
 
 ### Local
