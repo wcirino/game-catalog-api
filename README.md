@@ -72,6 +72,11 @@ O **Game Catalog API** permite:
 
 ## ▶️ Como rodar
 
+- mvn clean package -DskipTests
+- docker build -t game-catalog-api:latest .
+- docker run -d -p 8085:8085 --name game-catalog-api game-catalog-api:latest
+
+
 ### Local
 ```bash
 mvn spring-boot:run
@@ -108,3 +113,4 @@ game-catalog-api
 │ └── test/java/com/games/api
 │ ├── controller # Testes dos controllers
 │ └── service # Testes dos services
+
