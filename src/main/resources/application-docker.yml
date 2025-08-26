@@ -1,4 +1,42 @@
 spring:
-  config:
-    activate:
-      on-profile: docker
+  application:
+    name: api-usuario
+  banner:
+    location: classpath:banner-${spring.profiles.active}.txt
+  datasource:
+    url: jdbc:mysql://db_base_dev:3306/game_catalog?createDatabaseIfNotExist=true&serverTimezone=UTC
+    username: root
+    password: admin
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        generate_statistics: true
+    show-sql: true
+  mvc:
+    pathmatch:
+      matching-strategy: ant-path-matcher
+    log-request-details: true
+
+server:
+  port: 8085
+
+logging:
+  level:
+    org:
+      springframework:
+        web: DEBUG
+        security: ERROR
+      hibernate: ERROR
+      hibernate.SQL: DEBUG
+      hibernate.type.descriptor.sql.BasicBinder: TRACE
+    com:
+      clinica: DEBUG
+  file:
+    path: ArquivoCursoLog.log
+
+app:
+  environment: hml
