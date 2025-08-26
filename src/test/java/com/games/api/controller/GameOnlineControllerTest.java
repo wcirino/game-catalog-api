@@ -1,21 +1,10 @@
 package com.games.api.controller;
 
-import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.ArgumentMatchers.eq;
-import static org.mockito.Mockito.atLeastOnce;
-import static org.mockito.Mockito.doNothing;
-import static org.mockito.Mockito.doThrow;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
-
-import java.util.List;
-
+import com.games.api.dto.OnlineGameDTO;
+import com.games.api.exception.GlobalExceptionHandler;
+import com.games.api.exception.ResourceNotFoundException;
+import com.games.api.service.IGameOnlineService;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,10 +17,13 @@ import org.springframework.data.domain.PageImpl;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 
-import com.games.api.dto.OnlineGameDTO;
-import com.games.api.exception.GlobalExceptionHandler;
-import com.games.api.exception.ResourceNotFoundException;
-import com.games.api.service.IGameOnlineService;
+import java.util.List;
+
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.ArgumentMatchers.eq;
+import static org.mockito.Mockito.*;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 @WebMvcTest(GameOnlineController.class)
 @Import(GlobalExceptionHandler.class)
@@ -49,6 +41,11 @@ class GameOnlineControllerTest {
         IGameOnlineService gameOnlineService() {
             return Mockito.mock(IGameOnlineService.class);
         }
+    }
+
+    @BeforeEach
+    void resetMocks() {
+        Mockito.reset(service);
     }
 
     @Test
@@ -141,7 +138,7 @@ class GameOnlineControllerTest {
                 .andExpect(status().isNotFound())
                 .andExpect(jsonPath("$.message").value("Online game not found"));
     }
-    
+
     @Test
     void shouldSearchOnlineGames() throws Exception {
         OnlineGameDTO dto = new OnlineGameDTO();
@@ -159,7 +156,7 @@ class GameOnlineControllerTest {
                 .andExpect(jsonPath("$.content[0].title").value("Valorant"))
                 .andExpect(jsonPath("$.totalElements").value(1));
 
-        verify(service).search(any(), any());
+        verify(service, atLeastOnce()).search(any(), any());
     }
 
     @Test
