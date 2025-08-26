@@ -74,7 +74,26 @@ O **Game Catalog API** permite:
 
 - mvn clean package -DskipTests
 - docker build -t game-catalog-api:latest .
-- docker run -d -p 8085:8085 --name game-catalog-api game-catalog-api:latest
+- docker run -d --name game-catalog-api-dev --network docker_global-rede -p 8085:8085 -e SPRING_PROFILES_ACTIVE=docker -e SPRING_APPLICATION_NAME=game-catalog-api-dev game-catalog-api:latest
+
+🚀 Actuator Endpoints
+
+A API utiliza o Spring Boot Actuator para expor endpoints de monitoramento e métricas.
+
+Lista de endpoints expostos
+👉 http://localhost:8085/actuator
+
+Health check
+👉 http://localhost:8085/actuator/health
+
+Informações da aplicação
+👉 http://localhost:8085/actuator/info
+
+Métricas disponíveis
+👉 http://localhost:8085/actuator/metrics
+
+Exemplo de métrica específica
+👉 http://localhost:8085/actuator/metrics/jvm.memory.used
 
 
 ### Local
