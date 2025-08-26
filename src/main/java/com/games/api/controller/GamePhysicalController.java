@@ -86,5 +86,4 @@ public class GamePhysicalController {
         log.info("GET /api/games/physical/search filter={}", filter);
         return ResponseEntity.ok(physicalGameService.search(filter, noSortPageable));
     }
-
 }
