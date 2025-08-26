@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: game-catalog-api-test
+
+  datasource:
+    url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+
+  sql:
+    init:
+      mode: always
+      schema-locations: classpath:scripts/schema-test.sql
+      data-locations: classpath:scripts/data-test.sql
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+    show-sql: false
+
+server:
+  port: 0
+
+logging:
+  level:
+    root: WARN
+    org.springframework: WARN
+    com.games: DEBUG
