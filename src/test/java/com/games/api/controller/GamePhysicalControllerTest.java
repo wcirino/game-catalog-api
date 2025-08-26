@@ -4,6 +4,7 @@ import com.games.api.dto.PhysicalGameDTO;
 import com.games.api.exception.GlobalExceptionHandler;
 import com.games.api.exception.ResourceNotFoundException;
 import com.games.api.service.IGamePhysicalService;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -40,6 +41,11 @@ class GamePhysicalControllerTest {
         IGamePhysicalService gamePhysicalService() {
             return Mockito.mock(IGamePhysicalService.class);
         }
+    }
+
+    @BeforeEach
+    void resetMocks() {
+        Mockito.reset(service);
     }
 
     @Test
