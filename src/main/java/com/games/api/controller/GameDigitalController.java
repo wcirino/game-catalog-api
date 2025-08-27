@@ -78,5 +78,13 @@ public class GameDigitalController {
         log.info("GET /api/games/digital/search filter={}", filter);
         return ResponseEntity.ok(digitalGameService.search(filter, noSortPageable));
     }
+    
+    @GetMapping("/test")
+    @Operation(summary = "Endpoint de teste para verificar se a API está no ar")
+    public ResponseEntity<String> test() {
+        log.info("GET /api/games/physical/test chamado");
+        return ResponseEntity.ok("API Game Catalog está no ar 🚀");
+    }
+
 
 }

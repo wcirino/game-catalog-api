@@ -78,4 +78,12 @@ public class GameOnlineController {
         log.info("GET /api/games/online/search filter={}", filter);
         return ResponseEntity.ok(onlineGameService.search(filter, noSortPageable));
     }
+    
+    @GetMapping("/test")
+    @Operation(summary = "Endpoint de teste para verificar se a API está no ar")
+    public ResponseEntity<String> test() {
+        log.info("GET /api/games/physical/test chamado");
+        return ResponseEntity.ok("API Game Catalog está no ar 🚀");
+    }
+
 }

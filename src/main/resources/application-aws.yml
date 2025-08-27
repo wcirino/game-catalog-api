@@ -1,28 +1,31 @@
 spring:
   application:
-    name: game-catalog-api-dev 
+    name: game-catalog-api-aws
   banner:
     location: classpath:banner-${spring.profiles.active}.txt
+
   datasource:
-    url: jdbc:mysql://db_base_dev:3306/game_catalog?createDatabaseIfNotExist=true&serverTimezone=UTC
-    username: ${DB_USER}
-    password: ${DB_PASSWORD}
+    url: jdbc:mysql://${DB_HOST}:${DB_PORT}/${DB_NAME}?createDatabaseIfNotExist=true&serverTimezone=UTC
+    username: ${DB_USER}       # usuário master do RDS
+    password: ${DB_PASSWORD}     # senha master do RDS
     driver-class-name: com.mysql.cj.jdbc.Driver
+
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: validate
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL8Dialect
         generate_statistics: true
-    show-sql: true
+    show-sql: true  # como ainda é teste, pode deixar true
+
   mvc:
     pathmatch:
       matching-strategy: ant-path-matcher
     log-request-details: true
 
 server:
-  port: 8085
+  port: 8085   # pode manter a mesma da dev se quiser
 
 logging:
   level:
@@ -31,12 +34,10 @@ logging:
         web: DEBUG
         security: ERROR
       hibernate: ERROR
-      hibernate.SQL: DEBUG
-      hibernate.type.descriptor.sql.BasicBinder: TRACE
     com:
-      clinica: DEBUG
+      games: DEBUG
   file:
-    path: ArquivoCursoLog.log
+    path: ArquivoDeLog-AWS.log   # log vai gerar arquivo no diretório do projeto
 
 app:
-  environment: hml
+  environment: aws

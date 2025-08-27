@@ -25,14 +25,18 @@ CREATE TABLE consoles (
 CREATE TABLE digital_games (
     id_digital_game BIGINT AUTO_INCREMENT PRIMARY KEY,
     title VARCHAR(200) NOT NULL,
+    description VARCHAR(1000),
     genre VARCHAR(100) NOT NULL,
-    production_studio VARCHAR(150),
     release_year INT,
+    platform VARCHAR(50),                         -- ex: PC, PS5
+    production_studio VARCHAR(150),
     production_classification VARCHAR(50),
     id_console BIGINT NOT NULL,
-    size_gb DECIMAL(6,2),
-    distribution_platform VARCHAR(100),
     price DECIMAL(10,2),
+    activation_key VARCHAR(100),                  -- chave de ativação
+    digital_store VARCHAR(100),                   -- ex: Steam, PSN
+    download_size DECIMAL(6,2),                   -- tamanho em GB
+    license_expiration DATE,                      -- expiração da licença
     active BOOLEAN NOT NULL DEFAULT TRUE,
     CONSTRAINT fk_digital_console FOREIGN KEY (id_console)
         REFERENCES consoles(id_console)
@@ -44,13 +48,18 @@ CREATE TABLE digital_games (
 CREATE TABLE physical_games (
     id_physical_game BIGINT AUTO_INCREMENT PRIMARY KEY,
     title VARCHAR(200) NOT NULL,
+    description VARCHAR(1000),
     genre VARCHAR(100) NOT NULL,
-    production_studio VARCHAR(150),
     release_year INT,
+    platform VARCHAR(50),                         -- ex: PS2, Xbox 360
+    production_studio VARCHAR(150),
     production_classification VARCHAR(50),
     id_console BIGINT NOT NULL,
-    media_type VARCHAR(50), -- Disc, Cartridge, Blu-ray
     price DECIMAL(10,2),
+    media_type VARCHAR(50),                       -- Disc, Cartridge, Blu-ray
+    condition_status VARCHAR(50),                 -- New, Used, Special Edition
+    manual_language VARCHAR(50),                  -- idioma do manual
+    has_box BOOLEAN DEFAULT TRUE,                 -- tem caixa original
     stock INT DEFAULT 0,
     active BOOLEAN NOT NULL DEFAULT TRUE,
     CONSTRAINT fk_physical_console FOREIGN KEY (id_console)
@@ -63,14 +72,18 @@ CREATE TABLE physical_games (
 CREATE TABLE online_games (
     id_online_game BIGINT AUTO_INCREMENT PRIMARY KEY,
     title VARCHAR(200) NOT NULL,
+    description VARCHAR(1000),
     genre VARCHAR(100) NOT NULL,
-    production_studio VARCHAR(150),
     release_year INT,
+    platform VARCHAR(50),                         -- ex: PC, PS4, Xbox
+    production_studio VARCHAR(150),
     production_classification VARCHAR(50),
     id_console BIGINT NOT NULL,
-    server_region VARCHAR(100),
+    price DECIMAL(10,2),
+    server VARCHAR(100),                          -- região do servidor
+    multiplayer BOOLEAN,
+    subscription_period VARCHAR(50),              -- Monthly, Annual
     max_players INT,
-    monthly_fee DECIMAL(10,2),
     active BOOLEAN NOT NULL DEFAULT TRUE,
     CONSTRAINT fk_online_console FOREIGN KEY (id_console)
         REFERENCES consoles(id_console)
