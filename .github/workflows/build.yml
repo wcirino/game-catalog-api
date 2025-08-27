@@ -134,7 +134,7 @@ jobs:
           docker push $IMAGE_URI
           echo "✅ Imagem enviada para o ECR: $IMAGE_URI"
 
-  deploy:
+  aws:
     runs-on: ubuntu-latest
     needs: docker
     steps:
@@ -150,9 +150,26 @@ jobs:
           aws ecs update-service \
             --cluster games-cluster-01 \
             --service game-catalog-api-service \
-            --force-new-deployment \
-            --query "service.deployments[0].status" \
-            --output text
+            --force-new-deployment
+          echo "📦 Novo deploy disparado no ECS"
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: aws
+    steps:
+      - name: Configurar credenciais AWS
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_REGION }}
+
+      - name: Validar se ECS está estável
+        run: |
+          aws ecs wait services-stable \
+            --cluster games-cluster-01 \
+            --services game-catalog-api-service
+          echo "✅ ECS Service está estável e rodando!"
 
       - name: Mensagem final
-        run: echo "✅ Deploy concluído com sucesso no ECS! Tudo certo 🚀"
+        run: echo "🚀 Deploy concluído com sucesso no ECS! Tudo certo"
