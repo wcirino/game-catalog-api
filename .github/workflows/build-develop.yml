@@ -132,9 +132,11 @@ jobs:
         run: |
           IMAGE_BASE=${{ secrets.DOCKERHUB_USERNAME }}/game-catalog-api
           TAG=${VERSION}-dev
-          docker build -t $IMAGE_BASE:$TAG .
-          docker push $IMAGE_BASE:$TAG
-          echo "✅ Imagem DEV publicada: $IMAGE_BASE:$TAG"
+          IMAGE_NAME=$IMAGE_BASE:$TAG
+          echo "📸 Nome final da imagem DEV: $IMAGE_NAME"
+          docker build -t $IMAGE_NAME .
+          docker push $IMAGE_NAME
+          echo "✅ Imagem DEV publicada: $IMAGE_NAME"
 
   deploy-hml:
     name: 🚀 Publicar Imagem HML
