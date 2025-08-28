@@ -84,7 +84,7 @@ jobs:
           if [ "$PERCENT" -lt 80 ]; then
             echo "Cobertura abaixo de 80%, falhando pipeline!"
             exit 1
-          fi   # 👈 aqui fecha corretamente o if
+          fi
 
   sonar:
     name: 🔍 Análise de Código
@@ -157,10 +157,11 @@ jobs:
       - name: Retag e Push da Imagem para HML
         run: |
           IMAGE_BASE=${{ secrets.DOCKERHUB_USERNAME }}/game-catalog-api
+          DEV_TAG=${VERSION}-dev
           HML_TAG=${VERSION}-hml
 
-          docker pull $IMAGE_BASE:${VERSION}-dev
-          docker tag $IMAGE_BASE:${VERSION}-dev $IMAGE_BASE:$HML_TAG
+          docker pull $IMAGE_BASE:$DEV_TAG
+          docker tag $IMAGE_BASE:$DEV_TAG $IMAGE_BASE:$HML_TAG
           docker push $IMAGE_BASE:$HML_TAG
 
           echo "🚀 Imagem HML publicada: $IMAGE_BASE:$HML_TAG"
