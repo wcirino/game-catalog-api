@@ -13,7 +13,7 @@
 
 	<groupId>com.games</groupId>
 	<artifactId>game-catalog-api</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>1.0.3-SNAPSHOT</version>
 	<name>game-catalog-api</name>
 	<description>API para catálogo de jogos</description>
 
